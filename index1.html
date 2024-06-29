@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-img">
+                <img src="profile.jpg" alt="profile">
+            </div>
+            <div class="userName">Nickey Eun</div>
+        </div>
+        <div class="dropdown"></div>
+
+        <ul class="menu">
+            <li><a href="#"><i class='bx bx-user'></i> My Profile</a></li>
+            <li><a href="#"><i class='bx bx-message-dots' ></i> Messages</a></li>
+            <li><a href="#"><i class='bx bx-bell' ></i> Notification</a></li>
+            <li><a href="#"><i class='bx bx-bell' ></i> Settings</a></li>
+            <li><a href="#"><i class='bx bx-bell' ></i> Help and support</a></li>
+            <li><a href="#"><i class='bx bx-log-out-circle' ></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <script>
+        let container = document.querySelector(".container");
+        let dropdown = document.querySelector(".dropdown");
+        dropdown.onclick = function(){
+            container.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
